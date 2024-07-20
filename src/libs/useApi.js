@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 // Create an Axios instance
 const api = axios.create({
-  baseURL: "http://localhost:4000/api",
+  baseURL: "https://server-1rma.onrender.com/api",
   withCredentials: true,
 });
 

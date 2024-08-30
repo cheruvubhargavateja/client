@@ -59,10 +59,10 @@ const BookingForm = ({ price, locationId }) => {
   return (
     <form
       onSubmit={handleSubmit(submitHandler)}
-      className="w-[50%] shadow-2xl rounded-xl flex flex-col py-10 px-10"
+      className="w-[90%] mx-auto lg:w-[60%] shadow-2xl rounded-xl flex flex-col py-10 px-10"
     >
-      <div className="flex items-center justify-evenly gap-4 mb-8">
-        <div className="flex-1">
+      <div className="flex flex-col xl:flex-row xl:items-center justify-evenly gap-4 mb-8">
+        <div className="flex-1 flex justify-between align-center xl:block">
           <label className="text-lg text-slate-500 px-2">Name:</label>
           <input
             placeholder="Please enter your name"
@@ -77,7 +77,7 @@ const BookingForm = ({ price, locationId }) => {
             <p className="text-sm text-red-500">{errors.name.message}</p>
           )}
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex justify-between align-center xl:block">
           <label className="text-lg text-slate-500 px-2">Mobile No:</label>
           <input
             placeholder="Please enter your mobile no"
@@ -98,8 +98,8 @@ const BookingForm = ({ price, locationId }) => {
         </div>
       </div>
 
-      <div className="flex items-center justify-evenly mb-8">
-        <div className="flex-1">
+      <div className="flex flex-col xl:flex-row xl:items-center justify-evenly mb-8">
+        <div className="flex-1 flex justify-between align-center xl:block">
           <label className="text-lg text-slate-500 px-2">No.of.members:</label>
           <input
             placeholder="Please enter no.of members"
@@ -119,7 +119,7 @@ const BookingForm = ({ price, locationId }) => {
             <p className="text-sm text-red-500">{errors.passengers.message}</p>
           )}
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex justify-between align-center xl:block">
           <label className="text-lg text-slate-500 px-2">Total Price:</label>
           <input
             type="number"
@@ -131,8 +131,8 @@ const BookingForm = ({ price, locationId }) => {
         </div>
       </div>
 
-      <div className="flex items-center justify-evenly mb-8">
-        <div className="flex-1">
+      <div className="flex flex-col xl:flex-row xl:items-center justify-evenly mb-8">
+        <div className="flex-1 flex justify-between align-center xl:block">
           <label className="text-lg text-slate-500 px-2">Start Date:</label>
           <input
             type="date"
@@ -148,7 +148,7 @@ const BookingForm = ({ price, locationId }) => {
             <p className="text-sm text-red-500">{errors.startDate.message}</p>
           )}
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex justify-between align-center xl:block">
           <label className="text-lg text-slate-500 px-2">Total days:</label>
           <input
             type="number"

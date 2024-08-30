@@ -43,14 +43,14 @@ const Admin = () => {
 
   return (
     <main className="w-full relative flex justify-center">
-      <section className="w-[80%] h-auto mb-0">
+      <section className="w-[100%] lg:w-[80%] h-auto mb-0">
         <section>
           <Navbar />
         </section>
-        <div className="flex justify-around mt-[5%]">
+        <div className="flex flex-col lg:flex-row lg:justify-around gap-10 lg:gap-0 mt-[5%]">
           <form
             onSubmit={handleSubmit(submitHandler)}
-            className="shadow-2xl rounded-xl w-[55%] flex flex-col justify-center text-center py-10"
+            className="shadow-2xl rounded-xl w-[80%] mx-auto lg:mx-0 lg:w-[55%] flex flex-col justify-center text-center py-10"
           >
             <InputField
               label="Name"
@@ -87,8 +87,8 @@ const Admin = () => {
             />
             <Button type="submit">Add Location</Button>
           </form>
-          <div className="w-1 bg-slate-200"></div>
-          <div className="w-[30%]">
+          <div className="w-1 bg-slate-200 hidden lg:block"></div>
+          <div className="w-[80%] mx-auto lg:mx-0 lg:w-[30%]">
             <DestinationCard ele={allValues} />
           </div>
         </div>

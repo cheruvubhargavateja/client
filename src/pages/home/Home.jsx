@@ -4,13 +4,11 @@ import Destinations from "../../components/Destinations";
 import Reviews from "../../components/Reviews";
 import Footer from "../../components/Footer";
 
-const Home = () => {  
+const Home = () => {
   return (
     <main className="w-full relative flex justify-center">
-      <div className="w-[80%] h-auto mb-0">
-        <section>
-          <Navbar />
-        </section>
+      <div className="w-full lg:w-[80%] h-auto mb-0">
+        <Navbar />
         <section className="px-8 py-6">
           <Hero />
         </section>

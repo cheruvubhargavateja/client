@@ -27,11 +27,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="bg-coral-red flex justify-between items-center px-8 py-6">
-      <div className="font-palanquin text-2xl font-semibold text-slate-200">
+    <div className="bg-coral-red flex flex-col md:flex-row justify-between items-center px-8 py-6">
+      <div className="mb-5 md:mb-0 font-palanquin text-2xl font-semibold text-slate-200">
         <NavLink to="/">👻-Tourism</NavLink>
       </div>
-      <div className="flex justify-between items-center gap-10">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-10">
         {userDetails?.isAdmin && (
           <NavLink
             to="/admin"
@@ -56,7 +56,7 @@ const Navbar = () => {
       <div
         className={
           userDetails?.username
-            ? "flex justify-between items-center gap-10"
+            ? "flex flex-col md:flex-row mt-6 md:mt-0 justify-between items-center gap-10"
             : "hidden"
         }
       >

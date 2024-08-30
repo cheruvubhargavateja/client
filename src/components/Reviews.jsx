@@ -15,7 +15,7 @@ const Reviews = ({ reviewsData }) => {
           return (
             <div
               key={ele?._id}
-              className="w-full flex justify-between items-center bg-white shadow-md rounded-lg p-6 text-center"
+              className="w-full flex flex-col md:flex-row  justify-between items-center bg-white shadow-md rounded-lg p-6 text-center"
             >
               <div className="w-[30%]">
                 <div className="w-10 py-2 rounded-full mx-auto mb-4 text-white text-xl bg-coral-red font-bold">
@@ -31,8 +31,8 @@ const Reviews = ({ reviewsData }) => {
                   />
                 </div>
               </div>
-              <div className="w-[70%]">
-                <p className="w-96 mx-auto text-gray-700 text-base">
+              <div className="w-full md:w-[70%]">
+                <p className="w-full md:w-96 mx-auto text-gray-700 text-base">
                   {ele?.description}
                 </p>
               </div>

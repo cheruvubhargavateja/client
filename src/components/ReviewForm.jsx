@@ -49,9 +49,9 @@ const ReviewForm = ({ locationId }) => {
     <section className="w-full flex mt-4">
       <form
         onSubmit={handleSubmit(submitHandler)}
-        className="shadow-2xl w-full rounded-xl flex justify-evenly py-6"
+        className="shadow-2xl w-full rounded-xl flex flex-col md:flex-row justify-evenly py-6"
       >
-        <div className="flex items-center">
+        <div className="mx-auto flex md:items-center">
           <Rating rating={rating} onClick={handleRating} />
         </div>
         <InputField
@@ -61,7 +61,7 @@ const ReviewForm = ({ locationId }) => {
           register={register}
           error={errors.description}
         />
-        <Button type="submit">Add</Button>
+          <Button type="submit">Add</Button>
       </form>
     </section>
   );

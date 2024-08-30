@@ -13,12 +13,12 @@ const BookingsCard = ({ bookingDetails }) => {
     location,
   } = bookingDetails;
   return (
-    <div className="w-[65%] shadow-lg flex justify-between mx-auto my-6">
+    <div className="w-[80%] lg:w-[65%] lg:border-0 shadow-lg flex flex-col lg:flex-row justify-between mx-auto my-6">
       <section className="flex-1">
         <DestinationCard ele={location} />
       </section>
       <section className="flex-1 text-lg tracking-wide">
-        <div className="pl-20">
+        <div className="px-8 lg:pl-20">
           <h1 className="text-coral-red text-2xl font-palanquin my-8">
             Name: {name}
           </h1>

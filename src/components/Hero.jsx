@@ -2,7 +2,7 @@ import heroImg from "../assets/images/hero.png";
 
 const Hero = () => {
   return (
-    <div className="flex items-center justify-center gap-20">
+    <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-20">
       <div className="flex-1">
         <h1 className="text-2xl font-bold font-montserrat">
           Hey there let's

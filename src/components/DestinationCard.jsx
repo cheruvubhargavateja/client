@@ -9,7 +9,7 @@ const DestinationCard = ({ reviewDetails, ele }) => {
   return (
     <div
       onClick={() => navigate(`/places/${serializeObject(ele)}`)}
-      className="max-w-sm rounded overflow-hidden shadow-lg bg-white self-stretch"
+      className="w-full md:w-sm lg:max-w-sm rounded overflow-hidden shadow-lg bg-white self-stretch"
     >
       <img
         className="w-full"

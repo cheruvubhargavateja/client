@@ -16,12 +16,12 @@ const Location = () => {
 
   return (
     <main className="w-full relative flex justify-center">
-      <section className="w-[80%] h-auto mb-0">
+      <section className="w-full lg:w-[80%] h-auto mb-0">
         <section>
           <Navbar />
         </section>
-        <div className="flex justify-around mt-[5%]">
-          <div className="w-[40%]">
+        <div className="flex flex-col lg:flex-row justify-around mt-[5%]">
+          <div className="w-[80%] mx-auto lg:p-0 lg:w-[30%]">
             <DestinationCard
               reviewDetails={reviewsData?.data}
               ele={locationDetails}
@@ -35,14 +35,14 @@ const Location = () => {
             />
           </>
         </div>
-        <section className="flex justify-between mt-[2%]">
-          <div className="w-[50%]">
+        <section className="flex flex-col-reverse lg:flex-row justify-between mt-[2%]">
+          <div className="w-[80%] mx-auto lg:w-[50%]">
             <LocationReviews
               locationId={locationDetails?._id}
               reviewsData={reviewsData}
             />
           </div>
-          <div className="w-[48%] mt-6">
+          <div className="w-[80%] mx-auto lg:w-[48%] mt-6">
             <BookedCard />
           </div>
         </section>

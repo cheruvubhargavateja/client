@@ -10,7 +10,7 @@ const Bookings = () => {
 
   return (
     <main className='"w-full relative flex justify-center"'>
-      <div className="w-[80%] h-auto mb-0 mx-auto">
+      <div className="w-full lg:w-[80%] h-auto mb-0 mx-auto">
         <section>
           <Navbar />
         </section>

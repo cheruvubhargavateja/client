@@ -37,7 +37,7 @@ const Register = () => {
     <section className="w-full flex justify-center">
       <form
         onSubmit={handleSubmit(submitHandler)}
-        className="shadow-2xl rounded-xl w-[30%] flex flex-col justify-center mt-[10%] text-center py-10"
+        className="w-[80%] shadow-2xl rounded-xl md:w-[50%] lg:w-[30%] flex flex-col justify-center mt-[25%] lg:mt-[15%] text-center py-10"
       >
         <InputField
           type="text"
